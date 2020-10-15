@@ -1,0 +1,16 @@
+Data types
+int, double, string
+
+Data Structures
+list [can add type data, no type restriction]
+dictionary[key, value]
+
+Loops
+
+list comprehension
+m = [ 10 * x for x in range(1,10)]
+
+0 == "0" true
+0 != "0" false
+0 !== "0" true
+"0" === "0"
