@@ -1,0 +1,5 @@
+git init => Turn an existing directory to git repository
+git add directory/file => Snapshots the file in prepration for versioning
+git commit -m "Comment for the commit" => Records the snapshot permanently in vesion history
+git remote add origin https://github.com/chunduryjagadish/PythonProjects.git => configure git repository
+git push remote origin => 
