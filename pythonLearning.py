@@ -136,6 +136,48 @@ def binarySearchAutoTest():
     finally:
         termios.tcsetattr(sys.stdin, termios.TCSADRAIN, old_settings)
 
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class llist:
+    def __init__(self):
+        self.next = None
+    
+    def push(self, data):
+        newNode = Node(data)
+        newNode.next = self.next
+        self.next = newNode
+
+    def printList(self):
+        tempNode = self.next
+        while (tempNode):
+            print(tempNode.data)
+            tempNode = tempNode.next
+        print("Print over")
+
+    def reverseList(self):
+        Prev = None
+        Curr = self.next
+        while (Curr):
+            Next = Curr.next
+            Curr.next = Prev
+            Prev = Curr
+            Curr = Next
+        self.next = Prev
+            
+print("Python Learning Started")
+
+mylist = llist()
+mylist.push(10)
+mylist.push(20)
+mylist.push(30)
+mylist.push(40)
+mylist.printList()
+mylist.reverseList()
+mylist.printList()
+
 print("Python Learning Started")
 # binarySearchAutoTest()
 # bubbleSortAutoTest()
